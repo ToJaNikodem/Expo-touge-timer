@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Platform, Text, View, StyleSheet } from 'react-native';
+import MapView from 'react-native-maps';
 
 import * as Location from 'expo-location';
 
@@ -31,6 +32,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.paragraph}>{text}</Text>
+      <MapView style={styles.map} />
     </View>
   );
 }
@@ -45,5 +47,9 @@ const styles = StyleSheet.create({
   paragraph: {
     fontSize: 18,
     textAlign: 'center',
+  },
+  map: {
+    width: '100%',
+    height: '100%',
   },
 });
