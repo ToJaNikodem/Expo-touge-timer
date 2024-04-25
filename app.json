@@ -26,13 +26,15 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    
     "plugins": [
       [
         "expo-location",
         {
           "isAndroidBackgroundLocationEnabled": true
         }
-      ]
+      ],
+      "expo-router"
     ]
   }
 }
