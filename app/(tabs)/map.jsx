@@ -6,17 +6,19 @@ export default function MapScreen() {
   return (
     <View style={styles.container}>
       <MapView style={styles.map} />
-      <Link href="/home">Home</Link>      
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    display:'flex',
     flex: 1,
+    alignItems:'center',
   },
   map: {
     width: '100%',
-    height: '90%',
+    height: '60%',
   },
+
 });
